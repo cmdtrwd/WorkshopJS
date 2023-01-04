@@ -16,7 +16,12 @@ function NotifyPush() {
 
 
 function DeactivatePush(){
-    document.getElementById("circle").classList.remove("active");
+    let circle = document.getElementById("circle");
+    circle.classList.remove("active");
     isEnabled = true;
     clearInterval(pushInterval);
+
+    let box = circle.parentElement;
+    console.log(box);
+    box.classList.toggle("active");
 }

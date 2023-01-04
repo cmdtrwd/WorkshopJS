@@ -65,6 +65,9 @@ header{
             @include flex-column-center();
             justify-content: space-between;
             padding: $gap-base*5 0;
+            box-sizing: border-box;
+
+            transition: 0.3s all ease-in-out;
 
             h1{
                 font-weight: bold;
@@ -100,6 +103,11 @@ header{
                     background-color: $primary-color;
                     color: $quaterary-color;
                 }
+            }
+
+            &.active{
+                background-color: white;
+                border: 1px solid $quaterary-color;
             }
         }
     }

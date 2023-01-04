@@ -104,6 +104,8 @@ header #content-container .box {
   align-items: center;
   justify-content: space-between;
   padding: 80px 0;
+  box-sizing: border-box;
+  transition: 0.3s all ease-in-out;
 }
 header #content-container .box h1 {
   font-weight: bold;
@@ -136,6 +138,10 @@ header #content-container .box .button {
 header #content-container .box .button:hover {
   background-color: #2C3639;
   color: #DCD7C9;
+}
+header #content-container .box.active {
+  background-color: white;
+  border: 1px solid #DCD7C9;
 }
 
 @keyframes circle-push {
