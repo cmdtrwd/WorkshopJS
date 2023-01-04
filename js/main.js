@@ -1,18 +1,22 @@
 let count = 0;
 let pushInterval;
+let isEnabled = true;
 
 function NotifyPush() {
 	// alert("Push!");
     count++;
     console.log("Push button is clicked");
     console.log("Push " + count + " times");
-
-    document.getElementById("circle").classList.add("active");    
-    pushInterval = setInterval(DeactivatePush, 1000);
+    if (isEnabled){
+        document.getElementById("circle").classList.add("active");    
+        isEnabled = false;
+        pushInterval = setInterval(DeactivatePush, 1000);
+    }
 }
 
 
 function DeactivatePush(){
     document.getElementById("circle").classList.remove("active");
+    isEnabled = true;
     clearInterval(pushInterval);
 }
