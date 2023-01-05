@@ -54,7 +54,7 @@ header{
 
     #content-container{
         height: calc(100vh - 64px);
-        padding: $gap-base*10;
+        padding: $gap-base*5;
         box-sizing: border-box;
         @include flex-column-center();
         

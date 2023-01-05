@@ -87,7 +87,7 @@ header #top-nav ul li:hover {
 }
 header #content-container {
   height: calc(100vh - 64px);
-  padding: 160px;
+  padding: 80px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
